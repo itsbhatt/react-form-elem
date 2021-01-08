@@ -1,12 +1,4 @@
-import { Meta } from '@storybook/addon-docs/blocks'
-import Code from './assets/code-brackets.svg'
-import Colors from './assets/colors.svg'
-import Comments from './assets/comments.svg'
-import Direction from './assets/direction.svg'
-import Flow from './assets/flow.svg'
-import Plugin from './assets/plugin.svg'
-import Repo from './assets/repo.svg'
-import StackAlt from './assets/stackalt.svg'
+import { Meta } from '@storybook/addon-docs/blocks';
 
 <Meta title='About/Welcome' />
 
@@ -22,7 +14,7 @@ This project provides a set of dynamic react form elements
 
 **Installation**
 
-To get started using Canvas kit React first add or install the module to your existing React project
+To get started using React Form Elem first add or install the module to your existing React project
 
 ```sh
 yarn add react-form-elem
@@ -37,29 +29,29 @@ npm i react-form-elem
 **Usage**
 
 ```jsx
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
-import { Select, Input } from 'react-form-elem'
+import { Select, Input } from 'react-form-elem';
 
 const listOptions = [
   { label: 'Item 1', value: 'item-1' },
   { label: 'Item 2', value: 'item-2' },
   { label: 'Item 3', value: 'item-3' }
-]
+];
 
 const SelectTemplate = () => {
-  const [value, setValue] = useState(listOptions[0])
+  const [value, setValue] = useState(listOptions[0]);
   return (
     <Select
       value={value}
       options={listOptions}
       placeholder='Select option'
       onChange={(option) => {
-        setValue(option)
+        setValue(option);
       }}
     />
-  )
-}
+  );
+};
 
 const Index = () => {
   return (
@@ -79,8 +71,8 @@ const Index = () => {
         <Input type='number' placeholder='you can only input numbers' />
       </div>
     </div>
-  )
-}
+  );
+};
 ```
 
 ## Reporting a Bug
