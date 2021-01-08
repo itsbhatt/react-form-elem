@@ -1,19 +1,19 @@
 {
-  "name": "react-form-library",
+  "name": "react-form-elem",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "license": "MIT",
   "main": "src/index.js",
   "directories": {
     "lib": "build"
   },
-  "homepage": "https://github.com/ItsBhatt/react-form-library",
+  "homepage": "https://github.com/ItsBhatt/react-form-elem",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ItsBhatt/react-form-library.git"
+    "url": "https://github.com/ItsBhatt/react-form-elem.git"
   },
   "bugs": {
-    "url": "https://github.com/ItsBhatt/react-form-library/issues",
+    "url": "https://github.com/ItsBhatt/react-form-elem/issues",
     "email": "itssonubhatt@gmail.com"
   },
   "scripts": {
