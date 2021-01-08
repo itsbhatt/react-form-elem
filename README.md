@@ -13,15 +13,49 @@ npm install --save react-form-elem
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 
-import MyComponent from 'react-form-elem'
-import 'react-form-elem/dist/index.css'
+import { Select, Input } from 'react-form-elem'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const listOptions = [
+  { label: 'Item 1', value: 'item-1' },
+  { label: 'Item 2', value: 'item-2' },
+  { label: 'Item 3', value: 'item-3' }
+]
+
+const SelectTemplate = () => {
+  const [value, setValue] = useState(listOptions[0])
+  return (
+    <Select
+      value={value}
+      options={listOptions}
+      placeholder='Select option'
+      onChange={(option) => {
+        setValue(option)
+      }}
+    />
+  )
+}
+
+const Index = () => {
+  return (
+    <div>
+      <h3>Select</h3>
+      <div>
+        <SelectTemplate />
+      </div>
+      <br />
+      <br />
+      <h3>Input Email</h3>
+      <div>
+        <Input placeholder='please enter email' />
+      </div> <br />
+      <h3>Input Number</h3>
+      <div>
+        <Input type='number' placeholder='you can only input numbers' />
+      </div>
+    </div>
+  )
 }
 ```
 
