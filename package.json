@@ -2,20 +2,48 @@
   "name": "react-form-library",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+  "license": "MIT",
+  "main": "src/index.js",
+  "directories": {
+    "lib": "build"
+  },
+  "homepage": "https://github.com/ItsBhatt/react-form-library",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ItsBhatt/react-form-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ItsBhatt/react-form-library/issues",
+    "email": "itssonubhatt@gmail.com"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.1",
+    "react-dom": ">=17.0.1"
+  },
+  "dependencies": {
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.1.11",
+    "@storybook/addon-essentials": "^6.1.11",
+    "@storybook/addon-links": "^6.1.11",
+    "@storybook/node-logger": "^6.1.11",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.11",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1"
   },
   "eslintConfig": {
     "extends": [
