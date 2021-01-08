@@ -1,13 +1,13 @@
-import styled from 'styled-components';
-import { heights, sidePaddings } from '../../config/sizes';
-import ArrowDown from '../../icons/ArrowDown';
+import styled from 'styled-components'
+import { heights, sidePaddings } from '../../config/sizes'
+import ArrowDown from '../../icons/ArrowDown'
 
 export const StyledWrapper = styled.div`
   box-sizing: border-box;
   position: relative;
   width: ${(pr) => pr.width};
   height: ${(pr) => heights[pr.innerSize]}px;
-`;
+`
 
 export const StyledHeader = styled.div`
   box-sizing: border-box;
@@ -16,11 +16,11 @@ export const StyledHeader = styled.div`
   input:not([disabled]) {
     cursor: pointer;
   }
-`;
+`
 
 export const StyledArrow = styled(ArrowDown).withConfig({
   shouldForwardProp: (prop, defPropValFN) =>
-    !['innerSize', 'upwards'].includes(prop) && defPropValFN(prop),
+    !['innerSize', 'upwards'].includes(prop) && defPropValFN(prop)
 })`
   box-sizing: border-box;
   position: absolute;
@@ -32,33 +32,31 @@ export const StyledArrow = styled(ArrowDown).withConfig({
 
   pointer-events: none;
   height: 15px;
-`;
+`
 
 export const StyledPopover = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
   transform: translateY(100%);
-
+  z-index: 1;
   width: ${(pr) => pr.width};
   box-sizing: border-box;
   padding: 15px 0;
   background-color: #fff;
   box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.2),
     0px 4px 5px 1px rgba(0, 0, 0, 0.14), 0px 1px 7px 1px rgba(0, 0, 0, 0.12);
-
   transition: opacity 0.3s;
-
   visibility: ${(pr) => (pr.visible ? 'visible' : 'hidden')};
   opacity: ${(pr) => (pr.visible ? 1 : 0)};
-`;
+`
 
 export const List = styled.ul`
   box-sizing: border-box;
   list-style: none;
   margin: 0;
   padding: 0;
-`;
+`
 
 export const ListItem = styled.li`
   box-sizing: border-box;
@@ -70,4 +68,4 @@ export const ListItem = styled.li`
   &:hover {
     background-color: #eeeeee;
   }
-`;
+`
