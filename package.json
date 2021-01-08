@@ -1,12 +1,9 @@
 {
   "name": "react-form-elem",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "private": false,
   "license": "MIT",
-  "main": "src/index.js",
-  "directories": {
-    "lib": "build"
-  },
+  "main": "dist/index.js",
   "homepage": "https://github.com/ItsBhatt/react-form-elem",
   "repository": {
     "type": "git",
@@ -22,7 +19,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "prepublish": "rm -rf dist && mkdir dist &&  babel src -d dist --copy-files"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
   },
   "peerDependencies": {
     "react": ">=17.0.1",
@@ -32,6 +35,8 @@
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
     "@storybook/addon-actions": "^6.1.11",
     "@storybook/addon-essentials": "^6.1.11",
     "@storybook/addon-links": "^6.1.11",
