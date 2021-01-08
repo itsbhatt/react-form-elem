@@ -1,11 +1,11 @@
-import styled from 'styled-components';
-import { ComponentSize, heights, sidePaddings } from '../../config/sizes';
+import styled from 'styled-components'
+import { heights, sidePaddings } from '../../config/sizes'
 
 export const StyledWrapper = styled.div`
   position: relative;
   width: ${(pr) => pr.width};
   height: ${(pr) => heights[pr.innerSize]}px;
-`;
+`
 
 /* Real tag is assigned dynamically */
 export const StyledInput = styled.input`
@@ -42,11 +42,11 @@ export const StyledInput = styled.input`
   &:focus {
     box-shadow: inset 0 0 0 2px ${(pr) => (pr.error ? '#d93848' : '#000')};
   }
-`;
+`
 
 export const StyledIcon = styled.div.withConfig({
   shouldForwardProp: (prop, defPropValFN) =>
-    !['innerSize'].includes(prop) && defPropValFN(prop),
+    !['innerSize'].includes(prop) && defPropValFN(prop)
 })`
   box-sizing: border-box;
   position: absolute;
@@ -56,4 +56,4 @@ export const StyledIcon = styled.div.withConfig({
 
   height: 15px;
   width: 15px;
-`;
+`

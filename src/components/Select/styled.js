@@ -64,7 +64,7 @@ export const ListItem = styled.li`
   margin: 0;
   padding: 6px ${(pr) => sidePaddings[pr.innerSize]}px;
   cursor: pointer;
-
+  color: #111;
   &:hover {
     background-color: #eeeeee;
   }

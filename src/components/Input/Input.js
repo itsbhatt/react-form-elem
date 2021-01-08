@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { StyledInput, StyledWrapper } from './styled';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { StyledInput, StyledWrapper } from './styled'
 
 /**
  * Input for Numbers and Emails only
@@ -16,13 +16,13 @@ const Input = (props) => {
     placeholder,
     width,
     ...rest
-  } = props;
+  } = props
 
   const styles = {
     innerSize: size,
     error,
-    width,
-  };
+    width
+  }
 
   return (
     <StyledWrapper width={width} innerSize={size}>
@@ -36,8 +36,8 @@ const Input = (props) => {
         {...rest}
       />
     </StyledWrapper>
-  );
-};
+  )
+}
 
 Input.propTypes = {
   /**
@@ -71,8 +71,8 @@ Input.propTypes = {
   /**
    * error
    */
-  error: PropTypes.bool,
-};
+  error: PropTypes.bool
+}
 
 Input.defaultProps = {
   type: 'email',
@@ -81,7 +81,7 @@ Input.defaultProps = {
   onChange: undefined,
   value: undefined,
   error: false,
-  placeholder: undefined,
-};
+  placeholder: 'email'
+}
 
-export default Input;
+export default Input

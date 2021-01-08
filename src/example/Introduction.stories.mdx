@@ -1,0 +1,110 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+import Code from './assets/code-brackets.svg'
+import Colors from './assets/colors.svg'
+import Comments from './assets/comments.svg'
+import Direction from './assets/direction.svg'
+import Flow from './assets/flow.svg'
+import Plugin from './assets/plugin.svg'
+import Repo from './assets/repo.svg'
+import StackAlt from './assets/stackalt.svg'
+
+<Meta title='About/Welcome' />
+
+# Workday React Form Elem
+
+This project provides a set of dynamic react form elements
+
+---
+
+## Getting started
+
+### React
+
+**Installation**
+
+To get started using Canvas kit React first add or install the module to your existing React project
+
+```sh
+yarn add react-form-elem
+```
+
+or
+
+```sh
+npm i react-form-elem
+```
+
+**Usage**
+
+```jsx
+import React, { useState } from 'react'
+
+import { Select, Input } from 'react-form-elem'
+
+const listOptions = [
+  { label: 'Item 1', value: 'item-1' },
+  { label: 'Item 2', value: 'item-2' },
+  { label: 'Item 3', value: 'item-3' }
+]
+
+const SelectTemplate = () => {
+  const [value, setValue] = useState(listOptions[0])
+  return (
+    <Select
+      value={value}
+      options={listOptions}
+      placeholder='Select option'
+      onChange={(option) => {
+        setValue(option)
+      }}
+    />
+  )
+}
+
+const Index = () => {
+  return (
+    <div>
+      <h3>Select</h3>
+      <div>
+        <SelectTemplate />
+      </div>
+      <br />
+      <br />
+      <h3>Input Email</h3>
+      <div>
+        <Input placeholder='please enter email' />
+      </div> <br />
+      <h3>Input Number</h3>
+      <div>
+        <Input type='number' placeholder='you can only input numbers' />
+      </div>
+    </div>
+  )
+}
+```
+
+## Reporting a Bug
+
+If you spot a bug, inconsistency, or typo, please
+[open a bug issue](https://github.com/ItsBhatt/react-form-elem/issues/new?labels=bug&template=bug.md).
+Better yet, submit a pull request to addresses it.
+
+## Feature Requests
+
+If you have an idea, we would love to hear about it. The best way to suggest a feature is to
+[open a feature issue](https://github.com/ItsBhatt/react-form-elem/issues/new?labels=feature&template=feature.md).
+
+## License
+
+MIT © [ItsBhatt](https://github.com/ItsBhatt)
+
+## Supported Browsers
+
+- IE11
+- Microsoft Edge: last 2 versions
+- Mozilla Firefox: last 2 versions
+- Google Chrome: last 2 versions
+- Apple Safari: last 2 versions
+- Opera: last 2 versions
+
+## Thank you
