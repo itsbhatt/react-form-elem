@@ -1,3 +1,5 @@
-export { defualt as Select } from './components/Select'
+import Select from './components/Select'
 
-export { defualt as Input } from './components/Input'
+import Input from './components/Input'
+
+export { Select, Input }

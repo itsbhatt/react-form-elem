@@ -1,6 +1,6 @@
 # react-form-elem
 
-> Made with create-react-library
+> Simple dynamic Select and Input elements for react
 
 [![NPM](https://img.shields.io/npm/v/react-form-elem.svg)](https://www.npmjs.com/package/react-form-elem) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
