@@ -12,7 +12,8 @@
     "start": "start-storybook -p 6006",
     "build": "build-storybook",
     "clean": "rm -rf ./dist",
-    "copy-files": "npm run clean && cpy src --parents dist"
+    "copy-files": "npm run clean && cpy src --parents dist",
+    "prepublish": "npm run copy-files"
   },
   "peerDependencies": {
     "react": "^16.0.0",
